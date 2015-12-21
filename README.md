@@ -4,6 +4,10 @@ Best Practice
 Best-practice config/cook-book for popular tools.
 
 # Content
+## nginx
+The config file usually is put under `/etc/nginx/conf.d/`.
+
+For example, [default](nginx/default).
 
 ## vnc4server
 ### Config file
