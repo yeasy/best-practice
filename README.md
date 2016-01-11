@@ -9,6 +9,12 @@ The config file usually is put under `/etc/nginx/conf.d/`.
 
 For example, [default](nginx/default).
 
+## security
+Default Iptables rules with limit port open and access ratio.
+```sh
+$ iptables-restore < security/iptables.rules
+```
+
 ## vnc4server
 ### Config file
 The config file is [${HOME}/.vnc/xstartup](vnc4server/xstartup).
@@ -20,11 +26,11 @@ vncserver :1
 ### Kill some server
 Kill the server listening on 1.
 ```sh
-vncserver -kill :1
+$ vncserver -kill :1
 ```
 ### Set password
 ```sh
-vncpasswd
+$ vncpasswd
 ```
 
 # Contribution
