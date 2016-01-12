@@ -7,7 +7,7 @@
 -A INPUT -i lo -j ACCEPT
 -A INPUT -d 127.0.0.0/8 -i !lo -j REJECT --reject-with icmp-port-unreachable
 -A INPUT -m state --state RELATED,ESTABLISHED -j ACCEPT
--A INPUT -p tcp --syn -m connlimit --connlimit-above 15 --connlimit-mask 32 -j REJECT --reject-with tcp-reset -m comment --comment "Limit 30 conns for each IP"
+-A INPUT -p tcp --syn -m connlimit --connlimit-above 30 --connlimit-mask 32 -j REJECT --reject-with tcp-reset -m comment --comment "Limit 30 conns for each IP"
 -A INPUT -p tcp -m state --state NEW -m multiport --dport 22,8080 -j ACCEPT -m comment --comment "Allow known services access"
 -A INPUT -p icmp -m icmp --icmp-type 8 -j ACCEPT -m comment --comment "Allow Ping"
 -A INPUT -m limit --limit 10/min -j LOG --log-prefix "iptables denied: " --log-level 7 -m comment --comment "Log deny pkts"
