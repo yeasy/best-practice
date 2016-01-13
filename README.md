@@ -1,21 +1,45 @@
 Best Practice
 ===
 
-Best-practice config/cook-book for popular tools.
+Best-practice config/cook-book/stack for popular opensource tools.
+
+There are lots of efficient tools in my daily work. Collect the necessary config here.
 
 # Content
-## nginx
+## [Nginx](nginx)
 The config file usually is put under `/etc/nginx/conf.d/`.
 
-For example, [default](nginx/default).
+See [default](nginx/default).
 
-## security
+## [Node.js](https://nodejs.org)
+
+### Framework
+For web server, use [express](http://expressjs.com).
+For REST API server, use [restify](http://restify.com).
+
+### CSS
+
+### HTML
+
+
+## [REST](https://en.wikipedia.org/wiki/Representational_state_transfer)
+REST style API design and ref framework: [Swagger](http://swagger.io/).
+
+## [Security](security)
 Default Iptables rules with limit port open and access ratio.
 ```sh
 $ iptables-restore < security/iptables.rules
 ```
 
-## vnc4server
+## [sysctl](sysctl)
+Optimized sysctl.conf for high-performance server.
+
+Put [sysctl.conf](sysctl/sysctl.conf) under /etc/sysctl/, and load it by
+```sh
+$ sysctl -p
+```
+
+## [vnc4server](vnc4server)
 ### Config file
 The config file is [${HOME}/.vnc/xstartup](vnc4server/xstartup).
 ### Start some server
