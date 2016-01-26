@@ -6,6 +6,11 @@ Best-practice config/cook-book/stack for popular opensource tools.
 There are lots of efficient tools in my daily work. Collect the necessary config here.
 
 # Content
+
+## [MongoDB](https://www.mongodb.org)
+* Schema checking: [variety](https://github.com/variety/variety)
+* Web UI: [mongo-express](https://github.com/andzdroid/mongo-express)
+
 ## [Nginx](nginx)
 The config file usually is put under `/etc/nginx/conf.d/`.
 
@@ -24,6 +29,9 @@ For REST API server, use [restify](http://restify.com).
 
 ## [REST](https://en.wikipedia.org/wiki/Representational_state_transfer)
 REST style API design and ref framework: [Swagger](http://swagger.io/).
+
+Useful REST framework:
+* [eve](http://python-eve.org/) in python.
 
 ## [Security](security)
 Default Iptables rules with limit port open and access ratio.
