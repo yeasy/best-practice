@@ -28,17 +28,40 @@ function Welcome(props) {
   return <h1>Hello, {props.name}</h1>;
 }
 
-function App() {
+
+
+function List() {
   return (
     <div>
       <Welcome name="Sara" />
-      <Welcome name="Cahal" />
-      <Welcome name="Edite" />
     </div>
   );
 }
 
 ReactDOM.render(
-  <App />,
+  <List />,
   document.getElementById('list')
+);
+
+
+class ListAnother extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+    };
+  }
+  render() {
+    return (
+      <div>
+        <Welcome name="Sara"/>
+        <Welcome name="Cahal"/>
+        <Welcome name="Edite"/>
+      </div>
+    );
+  }
+}
+
+ReactDOM.render(
+  <ListAnother />,
+  document.getElementById('anotherlist')
 );
