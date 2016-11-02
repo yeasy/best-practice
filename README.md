@@ -1,9 +1,9 @@
 Best Practice
 ===
 
-Best-practice config/cook-book/stack for popular opensource tools.
+Best-practice config/cook-book/stack for popular tools.
 
-There are lots of efficient tools in my daily work. Collect the necessary config here.
+There are lots of efficient tools in daily work. Collect the necessary config here.
 
 # Content
 
@@ -19,10 +19,12 @@ See [default](nginx/default).
 ## [Node.js](https://nodejs.org)
 
 ### Framework
-For web server, use [express](http://expressjs.com).
-For REST API server, use [restify](http://restify.com).
+* For web server, use [express](https://expressjs.com).
+* For REST API server, use [restify](https://restify.com).
+* [Example website](website) with [babel](https://babeljs.io) and [webpack](https://webpack.github.io/).
 
 ### CSS
+* [bootstrap](https://getbootstrap.com/)
 
 ### HTML
 
@@ -32,6 +34,7 @@ REST style API design and ref framework: [Swagger](http://swagger.io/).
 
 Useful REST framework:
 * [eve](http://python-eve.org/) in python.
+* [restify](https://restify.com) in Node.js.
 
 ## [Security](security)
 Default Iptables rules with limit port open and access ratio.
