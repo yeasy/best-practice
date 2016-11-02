@@ -22,7 +22,7 @@ See [default](nginx/default).
 * For web server, use [express](https://expressjs.com).
 * For REST API server, use [restify](https://restify.com).
 * [Example website](website) with [babel](https://babeljs.io) and [webpack](https://webpack.github.io/).
-    - Run `npm install` to install all deps.
+    - Run `npm run build` to install all deps.
     - Run `npm run dev`, and access [http://localhost:8080/index.html](http://localhost:8080/index.html)
 
 ### CSS
