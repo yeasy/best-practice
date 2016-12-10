@@ -30,6 +30,16 @@ See [default](nginx/default).
 
 ### HTML
 
+## Python
+
+### Jupyter Notebook
+
+A helpful web based python interface and notebook.
+
+```bash
+$ pip install jupyter
+$ cd your_work_dir; jupyter notebook
+```
 
 ## [REST](https://en.wikipedia.org/wiki/Representational_state_transfer)
 REST style API design and ref framework: [Swagger](http://swagger.io/).
@@ -40,7 +50,8 @@ Useful REST framework:
 
 ## [Security](security)
 Default Iptables rules with limit port open and access ratio.
-```sh
+
+```bash
 $ iptables-restore < security/iptables.rules
 ```
 
@@ -48,7 +59,8 @@ $ iptables-restore < security/iptables.rules
 Optimized sysctl.conf for high-performance server.
 
 Put [sysctl.conf](sysctl/sysctl.conf) under /etc/sysctl/, and load it by
-```sh
+
+```bash
 $ sysctl -p
 ```
 
@@ -57,22 +69,26 @@ $ sysctl -p
 The config file is [${HOME}/.vnc/xstartup](vnc4server/xstartup).
 ### Start some server
 Let it listen on 1.
-```sh
+
+```bash
 vncserver :1
 ```
 ### Kill some server
 Kill the server listening on 1.
-```sh
+
+```bash
 $ vncserver -kill :1
 ```
 ### Set password
-```sh
+
+```bash
 $ vncpasswd
 ```
 
 # Contribution
 * `fork` this project to your repo, like `user/best-practice`, then clone to local.
-```
+
+```bash
 $ git clone git@github.com:user/best-practice.git
 $ cd best-practice
 $ git config user.name "User"
@@ -80,7 +96,8 @@ $ git config user.email user@email.com
 ```
 
 * Make some changes, commit and push to your Github repo.
-```
+
+```bash
 $ #do some change on the content
 $ git commit -am "Fix issue #1: change helo to hello"
 $ git push
@@ -88,7 +105,8 @@ $ git push
 
 * Open GitHub and make a pull request.
 * Remember to sync your repo often with my latest version.
-```
+
+```bash
 $ git remote add upstream https://github.com/yeasy/best-practice
 $ git fetch upstream
 $ git checkout master
