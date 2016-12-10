@@ -6,6 +6,14 @@ Best-practice config/cook-book/stack for popular tools.
 There are lots of efficient tools in daily work. Collect the necessary config here.
 
 # Content
+## Pandoc
+
+From github-style markdown to pdf: 
+
+```sh
+pandoc --toc --from markdown_github -s input.md -o output.pdf 
+```
+
 
 ## [MongoDB](https://www.mongodb.org)
 * Schema checking: [variety](https://github.com/variety/variety)
