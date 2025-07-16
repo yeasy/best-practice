@@ -6,7 +6,7 @@ class UserGithub extends React.Component {
         super(props);
         this.state = {
             username: '',
-            githubtUrl: '',
+            githubUrl: '',
             avatarUrl: '',
         };
     }
@@ -20,7 +20,7 @@ class UserGithub extends React.Component {
                     console.log(data.name);
                     this.setState({
                         username: data.name,
-                        githubtUrl: data.html_url,
+                        githubUrl: data.html_url,
                         avatarUrl: data.avatar_url
                     });
                 }
@@ -32,8 +32,10 @@ class UserGithub extends React.Component {
             <div>
                 <h3>{this.state.username}</h3>
                 <img src={this.state.avatarUrl}/>
-                <a href={this.state.githubtUrl}>Github Link</a>.
+                <a href={this.state.githubUrl}>Github Link</a>.
             </div>
         );
     }
 }
+
+module.exports = UserGithub;
